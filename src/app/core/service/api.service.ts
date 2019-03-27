@@ -104,8 +104,7 @@ export class ApiService {
   prepareOptions(headers, queryParams) {
     let requestHeaders = new HttpHeaders();
     requestHeaders = requestHeaders.append(
-      "Authorization",
-      `Bearer ${this.auth.getToken()}`
+      "X-AUTH-TOKEN", `${this.auth.getToken()}`
     );
     Object.keys(headers).forEach(header => {
       requestHeaders = requestHeaders.append(header, headers[header]);

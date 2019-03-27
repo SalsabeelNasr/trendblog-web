@@ -1,0 +1,213 @@
+.filter{
+
+    .sh-filter-container {
+        display: table;
+        margin: 20px auto;
+        margin-bottom: 40px;
+    }
+    
+    .sh-filter-blog {
+        margin-bottom: 60px;
+        margin-top: -8px;
+    }
+    
+    .sh-filter,
+    .sh-filer-icon {
+        float: left;
+    }
+    
+    .sh-filter {
+        text-align: center;
+    }
+    
+    .sh-filer-icon {
+        font-size: 24px;
+        margin-right: 32px;
+        margin-top: 19px;
+        position: relative;
+        display: none;
+    }
+    
+    .sh-filter span {
+        display: inline-block;
+        position: relative;
+        bottom: -2px;
+        margin: 0px;
+        margin-right: -4px;
+        padding: 15px 10px;
+        cursor: pointer;
+        font-weight: bold;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 13px;
+        text-transform: uppercase;
+        transition: 0.3s all ease-in-out;
+    }
+    
+    .sh-filter span.active {
+        color: #47c9e5;
+        transition: 0s all ease-in-out;
+    }
+    
+    .sh-filter span:after {
+        opacity: 0;
+    }
+    
+    .sh-filter span.active:after {
+        opacity: 1;
+        transition: 0s all ease-in-out;
+    }
+    
+    .sh-filter span:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 10px; right: 10px; bottom: -2.5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #47c9e5;
+        z-index: 100;
+        transition: 0.3s all ease-in-out;
+    }
+    
+    .sh-filter span:first-child {
+        padding-left: 0;
+    }
+    
+    .sh-filter span:first-child:after {
+        left: 0px;
+    }
+    
+    .sh-filter span:last-child {
+        padding-right: 0;
+    }
+    
+    .sh-filter span:last-child:after {
+        right: 0px;
+    }
+    
+    @media (max-width: 1000px) {
+        .sh-portfolio .sh-portfolio-item {
+            width: 50%;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .sh-portfolio .sh-portfolio-item {
+            width: 100%;
+        }
+    }
+    
+    .sh-filter-item-content {
+        display: block;
+    }
+    
+    a.sh-filter-item-content {
+        color: inherit;
+    }
+    
+    .sh-portfolio-filter-alignment-left {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    .sh-portfolio-filter-alignment-center {
+        margin: 0 auto;
+    }
+    
+    .sh-portfolio-filter-alignment-right {
+        margin-right: 0;
+        margin-left: auto;
+    }
+    
+    @media (max-width: 800px) {
+        .sh-portfolio-filter-mobile-alignment-left {
+            margin-left: 0!important;
+            margin-right: auto!important;
+        }
+    
+        .sh-portfolio-filter-mobile-alignment-center {
+            margin: 0 auto!important;
+        }
+    
+        .sh-portfolio-filter-mobile-alignment-right {
+            margin-right: 0!important;
+            margin-left: auto!important;
+        }
+    }
+    
+    .sh-portfolio-filter-style2 span {
+        font-weight: normal;
+    }
+    
+    .sh-portfolio-filter-style2 .sh-filter-item.active {
+        font-weight: bold;
+    }
+    
+    .sh-portfolio-filter-style3 .sh-filter-item {
+        font-weight: normal;
+        padding: 5px 4px;
+    }
+    
+    .sh-portfolio-filter-style3 .sh-filter-item:first-child {
+        padding-left: 0px;
+    }
+    
+    .sh-portfolio-filter-style3 .sh-filter-item:last-child {
+        padding-right: 0px;
+    }
+    
+    .sh-portfolio-filter-style3 .sh-filter-item.active {
+        border-width: 0px;
+    }
+    
+    .sh-portfolio-filter-style3 .sh-filter-item.active .sh-filter-item-content {
+        background-color: #47c9e5!important;
+        color: #fff!important;
+        font-weight: bold;
+        box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.2);
+        transition: 0s background ease-in-out;
+    }
+    
+    .sh-portfolio-filter-style3 .sh-filter-item.active:after,
+    .sh-portfolio-filter-style3 .sh-filter-item:after {
+        display: none;
+    }
+    
+    .sh-portfolio-filter-style3 .sh-filter-item-content {
+        padding: 6px 15px!important;
+        border-radius: 30px;
+        transition: 0.3s background, font-weight ease-in-out;
+    }
+    
+    .sh-portfolio-filter-style4 .sh-filter span {
+        border-width: 0px!important;
+        padding: 5px 8px;
+        text-transform: none;
+    }
+    
+    .sh-portfolio-filter-style4 .sh-filter-item-content {
+        border-radius: 100px;
+    }
+    
+    .sh-portfolio-filter-style4 .sh-filter-item:hover .sh-filter-item-content {
+        border-color: transparent!important;
+    }
+    
+    .sh-portfolio-filter-style4 .sh-filter-item:not(.active) .sh-filter-item-content  {
+        border: 1px solid #e6e6e6;
+    }
+    
+    .sh-portfolio-filter-style4 .sh-filter-item:hover .sh-filter-item-content {
+        color: #fff!important;
+    }
+    
+    .sh-portfolio-filter-style4 .sh-filter-item.active .sh-filter-item-content {
+        box-shadow: none!important;
+    }
+    
+    .sh-portfolio-filter-style5 .sh-filter-item:not(.active) .sh-filter-item-content {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+}

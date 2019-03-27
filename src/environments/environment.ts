@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  staggingApi: 'https://trendblog-api-staging.herokuapp.com/',
+  liveApi: 'https://api.trendblog.app/'
 };
 
 /*

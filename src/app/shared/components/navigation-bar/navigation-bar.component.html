@@ -1,60 +1,28 @@
 <div class="navigation-bar">
-	<div class="header py-4">
-		<div class="container">
-			<div class="d-flex">
-				<a class="header-brand" href="/">
-					<img class="header-brand-img" src="../../../../assets/images/logo.svg" alt="tabler logo">
-				</a>
-				<div class="d-flex order-lg-2 ml-auto">
-					<app-notifications-bell></app-notifications-bell>
-					<div ngbDropdown class="dropdown">
-						<a id="userSettingsDropDown" class="nav-link pr-0 leading-none" ngbDropdownToggle>
-							<span class="avatar"></span>
-							<span class="ml-2 d-none d-lg-block">
-								<span class="text-default">User</span>
-								<small class="text-muted d-block mt-1">Administrator</small>
-							</span>
-						</a>
-						<div ngbDropdownMenu class="dropdown-menu" aria-labelledby="userSettingsDropDown">
-							<a ngbDropdownItem class="dropdown-item" [routerLink]="['/settings']" >
-								<i class="dropdown-icon fe fe-settings"></i> Settings
-							</a>
-							<a ngbDropdownItem class="dropdown-item" href="bonus">
-								<i class="dropdown-icon fe fe-star"></i> Bonus
-							</a>
-							<a ngbDropdownItem class="dropdown-item" href="vouchers">
-								<i class="dropdown-icon fe fe-heart"></i> Vouchers
-							</a>
-							<a ngbDropdownItem class="dropdown-item" (click)="logout()">
-								<i class="dropdown-icon fe fe-log-out"></i> Logout
-							</a>
-						</div>
-					</div>
-				</div>
-				<a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse"
-					data-target="#headerMenuCollapse">
-					<span class="header-toggler-icon"></span>
-				</a>
-			</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<img src="../../../../assets/images/logo.png" class="pr-2" style="width:32px">
+		<a class="navbar-brand" href="#">TrendBlog</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="m-auto navbar-nav" style="padding-left: 18%;">
+				<li class="nav-item active pr-3">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">upload</a>
+				</li>
+			</ul>
+			<a class="ml-auto mr-3 nav-link pr-0 leading-none d-flex row">
+				<span class="avatar"></span>
+				<span class="ml-2 d-none d-lg-block">
+					<span class="text-default">User</span>
+					<small class="text-muted d-block mt-1">top user</small>
+				</span>
+			</a>
 		</div>
-	</div>
-	<div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg order-lg-first">
-					<ul class="nav nav-tabs border-0 flex-column flex-lg-row">
-						<li class="nav-item">
-							<a href="/dashboard" class="nav-link active"><i class="fe fe-home"></i> Dashboard</a>
-						</li>
-						<li class="nav-item">
-							<a href="/wallet" class="nav-link"><i class="fe fe-briefcase"></i> Wallet</a>
-						</li>
-						<li class="nav-item dropdown"><a href="/tokens" class="nav-link"><i class="fe fe-calendar"></i>
-								Tokens</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+	</nav>
 </div>
